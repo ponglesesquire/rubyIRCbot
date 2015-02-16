@@ -1,0 +1,8 @@
+"config":[
+{	"server":"irc.durd.net",
+	"port":6667,
+	"nick":"PingBot"
+	"channels": {
+		"#gmc"
+	}
+}]

@@ -3,8 +3,12 @@ require 'socket'
 
 #module PingBot
 
-class IrcCon
+class IRC
 	#Initalization and connection functions
+	attr_reader :host
+	attr_reader :port
+	attr_reader :nick
+	
 	def initialize(nick, host, port=6667, pass=nil, verbose = false)
 		@host = host
 		@port = port
@@ -32,6 +36,10 @@ class IrcCon
 		verbose?('Closing Connection')
 		quitMessage.nil? ? sendQuit('Bot shutting down, goodbye.') : sendQuit(quitMessage)
 		return @con.close()
+	end
+
+	def getData()
+		return @con.gets
 	end
 
 	#Command functions
