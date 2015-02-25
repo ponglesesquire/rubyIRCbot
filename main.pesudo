@@ -1,0 +1,16 @@
+require requirements
+
+check commandline for argument
+	add to instance's config settings
+check config.cfg for configuration
+	add to instance's config settings
+
+loop through list of networks
+	start connection to network and add to array
+end loop
+
+loop through array of networks
+	check incoming data against command list
+		reply if match
+	end check
+end loop

@@ -1,8 +1,27 @@
-"config":[
-{	"server":"irc.durd.net",
-	"port":6667,
-	"nick":"PingBot"
-	"channels": {
-		"#gmc"
-	}
-}]
+{
+ "networks" : [{
+  "label" : "BoredIcons",
+  "address" : [
+   "irc.durd.net",
+   "irc.boredicons.com",
+   "irc.twigathy.com"
+   ],
+  "nickname" : "PingBot",
+  "password" : "butts",
+  "identtype" : "nickserv",
+  "channel" : [
+   "#gmc",
+   "#bored"
+   ]
+  },
+  {
+  "label" : "SlashNet",
+  "address" : "irc.slashnet.org",
+  "channel" : "#yygchat"
+  }
+ ],
+ "defaults" : {
+  "nickname" : "PingBot",
+  "port" : 6667
+ }
+}
